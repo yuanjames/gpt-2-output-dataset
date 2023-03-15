@@ -57,6 +57,7 @@ def process_single(model, tokenizer, args):
     log_softmax = nn.LogSoftmax(dim=1)
 
     data = _load_split('data', source=args.source, split=args.split)
+    
     if args.output:
         output_file = args.output
     else:
